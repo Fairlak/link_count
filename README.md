@@ -13,6 +13,20 @@ Python3 должен быть уже установлен.
 pip install -r requirements.txt
 ```
 
+Примеры запуска скрипта:
+
+1.Сокращение ссылки
+```
+python main.py https://github.com/Fairlak/link_count
+bit.ly/3qrSP5q
+```
+
+2.Количество кликов
+```
+python main.py bit.ly/3qrSP5q
+0
+```
+
 ### Цель проекта
 
 Код написан в образовательных целях на онлайн-курсе для веб-разработчиков [dvmn.org](https://dvmn.org/).
