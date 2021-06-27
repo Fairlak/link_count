@@ -5,7 +5,6 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 
 
-
 def shorten_link(token, url):  
   link_for_shorten = 'https://api-ssl.bitly.com/v4/shorten'
   body = {
@@ -50,9 +49,3 @@ if __name__ == '__main__':
       print(bitlink)
   except requests.exceptions.HTTPError:
     print('Неправильная ссылка')
-
-
-
-
-
- 
