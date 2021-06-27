@@ -3,7 +3,8 @@ import os
 import argparse
 from urllib.parse import urlparse
 from dotenv import load_dotenv
-load_dotenv()
+
+
 
 def shorten_link(token, url):  
   link_for_shorten = 'https://api-ssl.bitly.com/v4/shorten'
@@ -34,6 +35,7 @@ def count_clicks(token, bitlink):
 
   
 if __name__ == '__main__':
+  load_dotenv()
   parser = argparse.ArgumentParser()
   parser.add_argument("full_link", help="link shortening")
   args = parser.parse_args()
