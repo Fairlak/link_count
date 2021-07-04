@@ -36,7 +36,7 @@ def count_clicks(token, bitlink):
 if __name__ == '__main__':
   load_dotenv()
   parser = argparse.ArgumentParser(description='This program reduces and counts the number of clicks on the link')
-  parser.add_argument('link', help='This argument will be a long or short link')
+  parser.add_argument('link', help='Long link or bitlink')
   args = parser.parse_args()
   link = args.link
   bitly_token = os.getenv('BITLY_TOKEN')  
